@@ -1,6 +1,23 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const withPWA = require('next-pwa');
+const runtimeCaching =  require('next-pwa/cache.js');
 
-module.exports = nextConfig
+ 
+const config = {
+  // here goes your Next.js configuration
+};
+ 
+const nextConfig = withPWA({
+  dest: 'public',
+  register: true,
+  disable: process.env.NODE_ENV ===      'development',
+  runtimeCaching,
+  skipWaiting: true
+})(
+  config
+);
+ 
+module.exports = nextConfig;
+
+
+
