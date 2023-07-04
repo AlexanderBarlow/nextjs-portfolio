@@ -3,9 +3,9 @@ const withPWA = require('next-pwa');
 const runtimeCaching =  require('next-pwa/cache.js');
 
  
-const config = {
+module.exports = withPWA({
   // here goes your Next.js configuration
-};
+});
  
 const nextConfig = withPWA({
   dest: 'public',
@@ -13,9 +13,7 @@ const nextConfig = withPWA({
   disable: process.env.NODE_ENV ===      'development',
   runtimeCaching,
   skipWaiting: true
-})(
-  config
-);
+})
  
 module.exports = nextConfig;
 
