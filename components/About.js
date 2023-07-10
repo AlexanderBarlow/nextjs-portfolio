@@ -8,7 +8,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function About() {
   return (
     <section
-      className="grid grid-rows-3 grid-flow-col gap-4 items-center h-screen sm:h-screen sm:w-screen md:h-screen"
+      className="grid grid-rows-3 grid-flow-col gap-4 items-center h-screen sm:h-screen "
       id="about"
     >
         <a href="about"></a>
