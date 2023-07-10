@@ -3,6 +3,8 @@ import Image from "next/image";
 import myPic from "../assets/dlf10_0gfEPCHLKZ.json";
 import { Player } from "@lottiefiles/react-lottie-player";
 
+
+
 function About() {
   return (
     <section
@@ -24,7 +26,7 @@ function About() {
         <div className="" id="aboutme">
           <p className=" text-md text-white">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
-            out of This World! I am fluent in HTML, CSS and many things
+            out of <span className="italic text-lg text-purple-500">This World!</span> I am fluent in HTML, CSS and many things
             JavaScript.
           </p>
         </div>
