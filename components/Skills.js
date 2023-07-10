@@ -6,9 +6,10 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <section
-    className="grid grid-rows-3 grid-flow-col gap-4 items-center justify-center h-screen"
+    className="grid grid-rows-3 grid-flow-col gap-4 items-center justify-center h-screen "
     id="skills"
   >
+     <a href="skills"></a>
     <div className="w-60 row-start-1 row-span-1" id="lottie1">
       <Player
         src="https://lottie.host/f4596bf9-6f9d-4e9e-8409-68b7508b7adf/tVpcrC2opN.json"
