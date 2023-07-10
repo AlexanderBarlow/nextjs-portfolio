@@ -26,7 +26,7 @@ function About() {
         <div className="" id="aboutme">
           <p className=" text-md text-white">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
-            out of <span className="italic text-lg text-purple-500">This World!</span> I am fluent in HTML, CSS and many things
+             <span className="italic text-lg text-purple-500"> out of This World!</span> I am fluent in HTML, CSS and many things
             JavaScript.
           </p>
         </div>

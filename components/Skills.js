@@ -2,7 +2,8 @@ import React from 'react'
 import Image from "next/image";
 import myPic from "../assets/dlf10_0gfEPCHLKZ.json";
 import { Player } from "@lottiefiles/react-lottie-player";
-function Projects() {
+
+function Skills() {
   return (
     <section
     className="grid grid-rows-3 grid-flow-col gap-4 items-center justify-center h-screen"
@@ -40,4 +41,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default Skills
