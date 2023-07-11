@@ -10,7 +10,7 @@ function About() {
       id="about"
     >
       <a href="about"></a>
-      <div className="w-60 row-start-1 row-span-1 " id="lottie1">
+      <div className="lg:w-60 lg:row-start-1 lg:row-span-1 w-72 row-start-1" id="lottie1">
         <Player
           src="https://lottie.host/f4596bf9-6f9d-4e9e-8409-68b7508b7adf/tVpcrC2opN.json"
           className="player"
@@ -18,16 +18,16 @@ function About() {
           autoplay
         />
       </div>
-      <div className="row-end-4 row-span-3">
+      <div className="lg:row-end-4 lg:row-span-3 row-end-4 row-span-3">
         <div className="" id="name">
-          <h1 className="text-5xl text-purple-950 hover:underline ">
+          <h1 className="lg:text-5xl text-purple-950 lg:hover:underline text-8xl">
             Alexander Barlow
           </h1>
         </div>
-        <div className="" id="aboutme">
-          <p className=" text-md text-white ">
+        <div  id="aboutme">
+          <p className=" lg:text-md text-white text-4xl  ">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
-            <span className="italic text-lg text-purple-500">
+            <span className="italic text-purple-500">
               {" "}
               out of This World!
             </span>{" "}
@@ -36,7 +36,7 @@ function About() {
         </div>
       </div>
       <div
-        className="w-60 row-start-3 row-end-4 justify-items-end"
+        className="lg:w-60 lg:row-start-3 lg:row-end-4 lg:justify-items-end w-60 row-start-3 row-end-4 "
         id="lottie2"
       >
         <Player
