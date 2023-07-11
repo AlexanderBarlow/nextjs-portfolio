@@ -40,7 +40,7 @@ function Skills() {
         id="lottie2"
       >
         <Player
-          src="https://lottie.host/24eecb54-4941-4284-b26c-133ad3a3c271/EYWD4Y3JFc.json"
+          src="https://lottie.host/85facef7-e842-4a92-a20e-70a7a8ca835d/UY4iYNPUiI.json"
           className="player"
           loop
           autoplay
