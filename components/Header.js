@@ -20,7 +20,7 @@ function Header() {
     <Disclosure as="nav" className="trasparent sm:justify-center sm:place-content-center">
     {({ open }) => (
       <>
-        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-2 px-6 px-8">
             <div className="flex flex-1 items-center justify-center">
               <div className="">
                 <div className="flex space-x-4">
