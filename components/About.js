@@ -20,15 +20,15 @@ function About() {
       </div> */}
       <div className="grid grid-rows-2 grid-flow-col lg:row-end-4 lg:row-span-3 lg:justify-items-center leading-loose">
         <div className="" id="name">
-          <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold row-start-1 ">
+          <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold mb-2">
             Alexander Barlow
           </h1>
           <h2 className="text-5xl text-white lg:text-4xl font-bold ">
-            Full Stack Software Engineer
+            Software Engineer
           </h2>
         </div>
         <div  id="aboutme">
-          <p className=" lg:text-md text-white text-4xl lg:leading-relaxed">
+          <p className=" lg:text-md text-white text-4xl lg:leading-relaxed leading-relaxed">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}
@@ -39,7 +39,7 @@ function About() {
         </div>
       </div>
       <div
-        className="grid grid-rows-1 w-60 ml-96"
+        className="grid grid-rows-1 w-60 place-self-end"
         id="lottie2"
       >
         <Player
