@@ -6,20 +6,12 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function About() {
   return (
     <section
-      className="items-center snap-start m-8 lg:h-screen grid inset-0"
+      className="items-center snap-start m-8 lg:h-screen grid"
       id="about"
     >
       <a href="about" className="hidden"></a>
-      {/* <div className="grid grid-rows-1 lg:w-60 lg:row-start-1 lg:row-span-1 w-72 row-start-1 row-end-2 justify-items-start" id="lottie1">
-        <Player
-          src="https://lottie.host/f4596bf9-6f9d-4e9e-8409-68b7508b7adf/tVpcrC2opN.json"
-          className="player"
-          loop
-          autoplay
-        />
-      </div> */}
-      <div className="grid grid-rows-2 grid-flow-col lg:row-end-4 lg:row-span-3 lg:justify-items-center leading-loose">
-        <div className="" id="name">
+      <div className="grid grid-rows-2 lg:row-end-4 lg:row-span-3 lg:justify-items-center leading-loose">
+        <div className="mt-9" id="name">
           <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold mb-2">
             Alexander Barlow
           </h1>
@@ -27,14 +19,14 @@ function About() {
             Software Engineer
           </h2>
         </div>
-        <div  id="aboutme">
+        <div id="aboutme">
           <p className=" lg:text-md text-white text-4xl lg:leading-relaxed leading-relaxed">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}
             out of This World!
             </span>{" "}
-            I am fluent in HTML, CSS and many things JavaScript.
+            I am fluent in HTML, CSS and many things JavaScript. My interest sparked through developer tools. I would change the css to site like Google to make the background color purple. Or, make google my name. I found the ability to display my creativy on what connects the world captivating.
           </p>
         </div>
       </div>
