@@ -14,15 +14,13 @@ const triscape = Trispace({ subsets: ["latin"] });
 export default function Home(props) {
   return (
     <>
-      <div>
-        <main className={triscape.className}>
-          <Header />
+      <Header />
+        <main className={triscape.className} class="w-screen">
           <About />
           <Skills />
           <Projects />
           <Contact />
         </main>
-      </div>
     </>
   );
 }

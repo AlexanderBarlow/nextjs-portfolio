@@ -17,10 +17,10 @@ const navigation = [
 
 function Header() {
   return (
-    <Disclosure as="nav" className="trasparent sm:justify-center sm:place-content-center">
+    <Disclosure as="nav" className="backdrop-blur-sm col sm:justify-center sm:place-content-center top-0 sticky">
     {({ open }) => (
       <>
-        <div className="mx-auto max-w-7xl px-2 px-6 px-8">
+        <div className="mx-auto max-w-7xl px-8 just">
             <div className="flex flex-1 items-center justify-center">
               <div className="">
                 <div className="flex space-x-4">
@@ -30,7 +30,7 @@ function Header() {
                       href={item.href}
                       className={classNames(
                          'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-sm font-medium '
+                        'rounded-md px-3 py-2 text-4xl font-medium lg:text-2xl '
                       )}
                       
                     >

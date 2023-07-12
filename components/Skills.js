@@ -6,7 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <section
-      className="lg:grid lg:grid-rows-3 lg:grid-flow-col lg:gap-4 lg:items-center lg:h-screen lg:snap-center lg:justify-center grid grid-rows-3 grid-flow-col items-center h-screen gap-8"
+      className="lg:grid lg:grid-rows-3 lg:grid-flow-col lg:gap-4 lg:items-center lg:h-screen lg:snap-center lg:justify-center grid grid-rows-3 grid-cols-3 items-center h-screen gap-8"
       id="skills"
     >
       <a href="skills" className="scroll-smooth"></a>
@@ -36,7 +36,7 @@ function Skills() {
         </ul>
       </div>
       <div
-        className="w-60  row-start-3 row-end-4 justify-items-end"
+        className="lg:w-70 w-60 row-start-3 row-end-4 justify-items-end"
         id="lottie2"
       >
         <Player
