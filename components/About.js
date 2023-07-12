@@ -6,7 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function About() {
   return (
     <section
-      className="items-center snap-start m-8"
+      className="items-center snap-start m-8 h-screen grid"
       id="about"
     >
       <a href="about"></a>
