@@ -6,7 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function About() {
   return (
     <section
-      className="items-center snap-start m-8 lg:h-screen grid"
+      className="items-center snap-start m-8 lg:h-screen grid mb-12"
       id="about"
     >
       <a href="about" className="hidden"></a>
@@ -31,7 +31,7 @@ function About() {
         </div>
       </div>
       <div
-        className="grid grid-rows-1 w-60 place-self-end"
+        className="grid grid-rows-1 w-60 place-self-end mt-12"
         id="lottie2"
       >
         <Player

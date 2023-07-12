@@ -6,7 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <section
-      className="grid justify-items-center align-middle h-screen"
+      className="grid justify-items-center align-middle h-screen "
       id="skills"
     >
       <a href="skills" className="scroll-smooth hidden"></a>
