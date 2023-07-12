@@ -9,7 +9,7 @@ function Skills() {
       className="lg:grid lg:grid-rows-3 lg:grid-flow-col lg:gap-4 lg:items-center lg:h-screen lg:snap-center lg:justify-center grid grid-rows-3 grid-cols-7 items-center h-screen gap-8 snap-start"
       id="skills"
     >
-      <a href="skills" className="scroll-smooth"></a>
+      <a href="skills" className="scroll-smooth hidden"></a>
       <div className="lg:w-60 lg:row-start-1 lg:row-span-1 row-start-1 row-span-1 col-start-3" id="lottie1">
         <h1 className="text-white lg:text-4xl underline text-6xl ">Skills</h1>
       </div>

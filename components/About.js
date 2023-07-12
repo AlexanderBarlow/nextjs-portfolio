@@ -9,7 +9,7 @@ function About() {
       className="items-center snap-start m-8 h-screen grid"
       id="about"
     >
-      <a href="about"></a>
+      <a href="about" className="hidden"></a>
       {/* <div className="grid grid-rows-1 lg:w-60 lg:row-start-1 lg:row-span-1 w-72 row-start-1 row-end-2 justify-items-start" id="lottie1">
         <Player
           src="https://lottie.host/f4596bf9-6f9d-4e9e-8409-68b7508b7adf/tVpcrC2opN.json"

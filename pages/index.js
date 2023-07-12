@@ -14,7 +14,7 @@ const triscape = Trispace({ subsets: ["latin"] });
 export default function Home(props) {
   return (
     <>
-        <div className={triscape.className} class="h-screen snap-mandatory  overflow-scroll m-o w-screen">
+        <div className={triscape.className} class="h-screen snap-mandatory  overflow-scroll w-screen">
         <Header />
           <About />
           <Skills />
