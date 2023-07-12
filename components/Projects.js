@@ -37,7 +37,7 @@ function classNames(...classes) {
 function Projects() {
   return (
     <section
-      className="lg:grid lg:grid-rows-3 lg:grid-flow-col lg:gap-4 lg:items-center lg:h-screen lg:snap-center grid grid-rows-3 grid-flow-col items-center h-screen"
+      className="lg:grid lg:grid-rows-3 lg:grid-flow-col lg:gap-4 lg:items-center lg:h-screen lg:snap-center grid grid-rows-3 grid-flow-col items-center h-screen snap-start"
       id="projects"
     >
       <a href="projects"></a>

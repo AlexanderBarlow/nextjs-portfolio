@@ -6,18 +6,18 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function About() {
   return (
     <section
-      className="items-center"
+      className="items-center snap-start m-8"
       id="about"
     >
       <a href="about"></a>
-      <div className="grid grid-rows-1 lg:w-60 lg:row-start-1 lg:row-span-1 w-72 row-start-1 row-end-2 justify-items-start" id="lottie1">
+      {/* <div className="grid grid-rows-1 lg:w-60 lg:row-start-1 lg:row-span-1 w-72 row-start-1 row-end-2 justify-items-start" id="lottie1">
         <Player
           src="https://lottie.host/f4596bf9-6f9d-4e9e-8409-68b7508b7adf/tVpcrC2opN.json"
           className="player"
           loop
           autoplay
         />
-      </div>
+      </div> */}
       <div className="grid grid-rows-2 grid-flow-col lg:row-end-4 lg:row-span-3 lg:justify-items-center leading-loose">
         <div className="" id="name">
           <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold row-start-1 ">
@@ -39,7 +39,7 @@ function About() {
         </div>
       </div>
       <div
-        className="grid grid-rows-1 w-60 justify-items-end"
+        className="grid grid-rows-1 w-60 ml-96"
         id="lottie2"
       >
         <Player

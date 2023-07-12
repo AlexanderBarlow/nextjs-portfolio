@@ -17,7 +17,7 @@ const navigation = [
 
 function Header() {
   return (
-    <Disclosure as="nav" className="backdrop-blur-sm col sm:justify-center sm:place-content-center top-0 sticky">
+    <Disclosure as="nav" className="backdrop-blur-sm col sm:justify-center sm:place-content-center top-0 sticky ">
     {({ open }) => (
       <>
         <div className="mx-auto max-w-7xl px-8 just">

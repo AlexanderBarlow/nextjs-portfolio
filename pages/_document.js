@@ -11,7 +11,7 @@ export default function Document() {
         <link href="/dist/main.css" rel="stylesheet"></link>
         <meta name="theme-color" content="#fff" />
       </Head>
-      <body className="bg-slate-900">
+      <body className="bg-slate-900 flex h-screen w-screen">
         <Main />
         <NextScript />
       </body>

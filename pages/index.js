@@ -15,12 +15,12 @@ export default function Home(props) {
   return (
     <>
       <Header />
-        <main className={triscape.className} class="w-screen">
+        <div className={triscape.className} class="h-screen snap-mandatory  overflow-scroll">
           <About />
           <Skills />
           <Projects />
           <Contact />
-        </main>
+        </div>
     </>
   );
 }
