@@ -10,7 +10,7 @@ function About() {
       id="about"
     >
       <a href="about" className="hidden"></a>
-      <div className="grid grid-rows-2 lg:row-end-4 lg:row-span-3 lg:justify-items-center leading-loose">
+      <div className="grid grid-rows-2 lg:row-end-4 lg:row-span-3 lg:justify-items-center h-screen">
         <div className="mt-9" id="name">
           <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold mb-2">
             Alexander Barlow
@@ -26,7 +26,7 @@ function About() {
               {" "}
             out of This World!
             </span>{" "}
-            I am fluent in HTML, CSS and many things JavaScript. My interest sparked through developer tools. I would change the css to site like Google to make the background color purple. Or, make google my name. I found the ability to display my creativy on what connects the world captivating.
+            I am fluent in HTML, CSS and many things JavaScript. My interest sparked through developer tools. I would change the css to sites like Google to make the background color purple. Or, make google my name. I found the ability to display my creativy on what connects the world captivating.
           </p>
         </div>
       </div>
