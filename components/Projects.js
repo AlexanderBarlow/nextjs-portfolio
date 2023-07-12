@@ -37,11 +37,11 @@ function classNames(...classes) {
 function Projects() {
   return (
     <section
-      className=" lg:h-screen lg:snap-centerh-screen mt-32 grid grid-rows-3"
+      className=" lg:h-screen lg:snap-center h-screen grid grid-rows-3 justify-items-center align-middle"
       id="projects"
     >
       <a href="projects" className="hidden"></a>
-      <div className="flex flex-100 h-fit w-fit justify-items-center" id="lottie1">
+      <div className="flex flex-100" id="lottie1">
         <h1 className="text-white text-6xl underline">Projects</h1>
       </div>
       <div className="flex flex-100">
