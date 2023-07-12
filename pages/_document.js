@@ -9,7 +9,7 @@ export default function Document() {
         <link rel="apple-touch-icon" href="/icon.png"></link>
         <link rel="stylesheet" href="/globals.css"></link>
         <link href="/dist/main.css" rel="stylesheet"></link>
-        <meta name="theme-color" content="#fff" />
+        <meta name="Alex Barlow" content="#020617" />
       </Head>
       <body className="bg-slate-900 flex h-screen w-screen m-2">
         <Main />
