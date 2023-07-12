@@ -6,7 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <section
-      className="grid justify-items-center align-middle h-screen "
+      className="grid justify-items-center align-middle h-screen"
       id="skills"
     >
       <a href="skills" className="scroll-smooth hidden"></a>
@@ -23,6 +23,8 @@ function Skills() {
           <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS</li>
+          <li>BootStrap</li>
+          <li>TailWind</li>
         </ul>
       </div>
       <div className="m-5">
@@ -34,6 +36,8 @@ function Skills() {
           <li>MySQL</li>
           <li>MongoDB</li>
           <li>GraphQL</li>
+          <li>API Development</li>
+          <li>Mongoose</li>
         </ul>
       </div>
       </div>

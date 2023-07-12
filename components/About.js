@@ -5,13 +5,14 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function About() {
   return (
+    <>
     <section
-      className="items-center snap-start m-8 lg:h-screen grid mb-12"
+      className="items-center snap-start m-6  grid sm:mb-12"
       id="about"
     >
       <a href="about" className="hidden"></a>
-      <div className="grid grid-rows-2 lg:row-end-4 lg:row-span-3 lg:justify-items-center h-screen">
-        <div className="mt-9" id="name">
+      <div className="grid grid-rows-2 lg:row-end-4 lg:row-span-3 sm:h-screen">
+        <div className="mt-9 h-fit mb-0" id="name">
           <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold mb-2">
             Alexander Barlow
           </h1>
@@ -19,7 +20,7 @@ function About() {
             Software Engineer
           </h2>
         </div>
-        <div id="aboutme">
+        <div  className="mt-0" id="aboutme">
           <p className=" lg:text-md text-white text-4xl lg:leading-relaxed leading-relaxed">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
@@ -31,7 +32,7 @@ function About() {
         </div>
       </div>
       <div
-        className="grid grid-rows-1 w-60 place-self-end mt-12"
+        className="grid grid-rows-1 w-60 place-self-end sm:mt-12 mt-0"
         id="lottie2"
       >
         <Player
@@ -42,6 +43,7 @@ function About() {
         />
       </div>
     </section>
+    </>
   );
 }
 
