@@ -9,16 +9,24 @@ const projects = [
     description: "A fullstack application. This application utilizes MySQL, Rest APIs and HandleBarsJS for server side rendering. This application authenticates users to create user sessions. Passwords can be added to help users keep track of them given some additional criteria. Passwords are encrypted upon storage and decrypted upon retrieval using a custom algorithm.",
     deployment: "https://password-tracker.herokuapp.com/login",
     repo: "https://github.com/AlexanderBarlow/password-tracker",
-    skill1: "ReactJS",
+    skill1: "HandleBarsJS",
     skill2: "NodeJS",
+    skill3: "MySQL",
+    skill4: "RESTful",
+    skill5: "Authentication",
+    skill6: "ExpressJS"
   },
   {
     name: "Disney Charactor Locator",
     description: "This application is a simple search engine utilizing third party APIs. The application uses cookies to save searches and results. The APIs data are cross referenced to ensure accurate results.",
     deployment: "https://alexanderbarlow.github.io/disney-character-locator/",
     repo: "https://github.com/AlexanderBarlow/disney-character-locator",
-    skill1: "Handlebars",
-    skill2: "NodeJS",
+    skill1: "HTML",
+    skill2: "CSS",
+    skill3: "Bulma",
+    skill4: "API",
+    skill5: "Cookies",
+    skill6: "Session Cache"
   },
   {
     name: "NestEase",
@@ -27,6 +35,10 @@ const projects = [
     repo: "https://github.com/AlexanderBarlow/rental-site",
     skill1: "ReactJS",
     skill2: "NodeJS",
+    skill3: "MongoDB",
+    skill4: "JWT",
+    skill5: "Materialize",
+    skill6: "GraphQL"
   },
 ];
 
@@ -37,15 +49,15 @@ function classNames(...classes) {
 function Projects() {
   return (
     <section
-      className="lg:snap-center h-screen grid lg:grid-rows-3 justify-items-center align-middle grid-cols-1 grid-flow-row gap-4"
+      className="lg:snap-center h-screen lg:grid lg:grid-rows-3 justify-items-center align-middle grid-cols-1 grid-flow-row gap-4 items-center grid ml-64 mr-64"
       id="projects"
     >
       <a href="projects" className="hidden"></a>
       <div className="flex flex-100" id="lottie1">
         <h1 className="text-white text-6xl underline">Projects</h1>
       </div>
-      <div className="flex flex-100">
-        <div className="lg:flex lg:flex-100 space-x-4 col-start-1">
+      <div className="flex flex-auto">
+        <div className="lg:flex lg:flex-100 space-x-4 col-start-1 m-20 ml-72" >
           {projects.map((item) => (
             <div
               className={classNames(
@@ -60,13 +72,27 @@ function Projects() {
                 <h1 className="text-purple-700 lg:text-3xl text-4xl font-bold">
                   {item.name}
                 </h1>
+                <div className="">
                 <p className="lg:text-xl text-2xl">{item.description}</p>
-                <ul className="flex justify-start">
-                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl">
+                </div>
+                <ul className="flex justify-start list-inside">
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
                     {item.skill1}
                   </li>
-                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl">
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
                     {item.skill2}
+                  </li>
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                    {item.skill3}
+                  </li>
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                    {item.skill4}
+                  </li>
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                    {item.skill5}
+                  </li>
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                    {item.skill6}
                   </li>
                 </ul>
               </a>

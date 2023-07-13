@@ -15,7 +15,7 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <body className="bg-slate-900 flex h-screen w-screen m-2">
+      <body className="bg-slate-900 flex h-screen w-screen m-5">
         <div id={"globalLoader"} >
           <div className="loader">
             <div />
