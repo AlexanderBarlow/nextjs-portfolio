@@ -53,18 +53,24 @@ function Projects() {
                 "lg:rounded-md lg:px-8 lg:py-8 lg:text-sm lg:font-medium ",
                 ""
               )}
-            > <a href={item.deployment}>
-              <h1 key={item.name} className="text-purple-700 lg:text-3xl text-6xl">
-                {item.name}
-              </h1>
-              <p className="lg:text-xl text-5xl">{item.description}</p>
-              <ul className="">
-                <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-5xl lg:text-xl">{item.skill1}</li>
-                <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-5xl lg:text-xl">{item.skill2}</li>
-              </ul>
+              key={item.name}
+            >
+              {" "}
+              <a href={item.deployment}>
+                <h1 className="text-purple-700 lg:text-3xl text-6xl">
+                  {item.name}
+                </h1>
+                <p className="lg:text-xl text-5xl">{item.description}</p>
+                <ul>
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-5xl lg:text-xl">
+                    {item.skill1}
+                  </li>
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-5xl lg:text-xl">
+                    {item.skill2}
+                  </li>
+                </ul>
               </a>
             </div>
-            
           ))}
         </div>
       </div>

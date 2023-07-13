@@ -8,9 +8,7 @@ export default function Document() {
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
-        <link rel="stylesheet" href="/globals.css"></link>
-        <link href="/dist/main.css" rel="stylesheet"></link>
-        <meta name="Alex Barlow" content="#020617" />
+        <meta name="Alex Barlow" content="#000" />
         <style>{loader}</style>
       </Head>
       <body className="bg-slate-900 flex h-screen w-screen m-2">
