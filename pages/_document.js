@@ -8,7 +8,7 @@ export default function Document() {
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
-        <meta name="Alex Barlow" content="#000" />
+        <meta name="Alex Barlow" content="#000000" />
         <style>{loader}</style>
       </Head>
       <body className="bg-slate-900 flex h-screen w-screen m-2">
@@ -25,6 +25,6 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
       </body>
-    </Html>
+    </Html>g
   );
 }
