@@ -8,8 +8,12 @@ export default function Document() {
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
-        <meta name="Alex Barlow" content="#000000" />
+        <meta name="Alex Barlow" content="#000" />
         <style>{loader}</style>
+        <script
+          src="https://kit.fontawesome.com/62659e05da.js"
+          crossorigin="anonymous"
+        ></script>
       </Head>
       <body className="bg-slate-900 flex h-screen w-screen m-2">
         <div id={"globalLoader"} >
@@ -20,11 +24,7 @@ export default function Document() {
         </div>
         <Main />
         <NextScript />
-        <script
-          src="https://kit.fontawesome.com/62659e05da.js"
-          crossorigin="anonymous"
-        ></script>
       </body>
-    </Html>g
+    </Html>
   );
 }
