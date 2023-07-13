@@ -11,11 +11,11 @@ function About() {
   return (
     <>
     <section
-      className="items-center snap-start m-6  grid sm:mb-12"
+      className="items-center snap-start m-6  grid sm:mb-12 justify-items-center w-fit"
       id="about"
     >
       <a href="about" className="hidden"></a>
-      <div className="grid grid-rows-2 lg:row-end-4 lg:row-span-3 sm:h-screen">
+      <div className="grid grid-rows-2 lg:row-end-4 lg:row-span-3 sm:items-center sm:justify-items-center">
         <div className="mt-9 h-fit mb-0" id="name">
           <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold mb-2">
             Alexander Barlow
@@ -41,14 +41,14 @@ function About() {
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}
-            out of This World!
+            accessible and gravitating!
             </span>{" "}
             I am fluent in HTML, CSS and many things JavaScript. My interest sparked through developer tools. I would change the css to sites like Google to make the background color purple. Or, make google my name. I found the ability to display my creativy on what connects the world captivating.
           </p>
         </div>
       </div>
       <div
-        className="grid grid-rows-1 w-60 place-self-end sm:mt-12 mt-0"
+        className="lg:grid lg:grid-rows-1 w-60 place-self-end sm:mt-12 mt-0 hidden"
         id="lottie2"
       >
         <Player

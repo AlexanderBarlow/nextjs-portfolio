@@ -4,7 +4,7 @@ import loader from "../loader";
 
 export default function Document() {
   return (
-    <Html className="smooth-scroll" lang="en">
+    <Html lang="en">
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
@@ -15,7 +15,7 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <body className="bg-slate-900 flex h-screen w-screen m-5">
+      <body className="bg-slate-900 flex m-5">
         <div id={"globalLoader"} >
           <div className="loader">
             <div />
