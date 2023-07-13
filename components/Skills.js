@@ -6,14 +6,11 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <section
-      className="grid justify-items-center align-middle h-screen"
+      className="flex fjustify-items-center align-middle h-screen w-screen"
       id="skills"
     >
       <a href="skills" className="scroll-smooth hidden"></a>
-      <div className="flex flex-100" id="lottie1">
-        <h1 className="text-white lg:text-4xl underline text-6xl ">Skills</h1>
-      </div>
-      <div className="flex flex-100 justify-evenly">
+        <h1 className="text-white lg:text-4xl underline text-6xl flex-100">Skills</h1>
       <div className="m-5">
         <h2 className="text-purple-700 text-5xl italic font-bold">Front-End</h2>
         <ul className="text-white text-4xl">
@@ -39,7 +36,6 @@ function Skills() {
           <li>API Development</li>
           <li>Mongoose</li>
         </ul>
-      </div>
       </div>
       <div
         className="lg:w-70 w-60 row-start-3 row-end-4 justify-items-end"

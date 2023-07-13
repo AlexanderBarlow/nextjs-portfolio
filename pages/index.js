@@ -24,7 +24,7 @@ function consoleClear() {
 export default function Home(props) {
   return (
     <>
-      <div className={triscape.className} >
+      <div className={triscape.className} class="h-screen">
           <Header />
           <About />
           <Skills />

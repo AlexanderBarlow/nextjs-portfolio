@@ -48,15 +48,16 @@ function classNames(...classes) {
 
 function Projects() {
   return (
+    <>
     <section
-      className="lg:snap-center h-screen lg:grid lg:grid-rows-3 justify-items-center align-middle grid-cols-1 grid-flow-row gap-4 items-center grid ml-64 mr-64"
+      className="lg:snap-center h-screen lg:grid lg:grid-rows-3 justify-items-center align-middle grid-cols-1 grid-flow-row gap-4 items-center mr-2 grid" 
       id="projects"
     >
       <a href="projects" className="hidden"></a>
       <div className="flex flex-100" id="lottie1">
         <h1 className="text-white text-6xl underline">Projects</h1>
       </div>
-      <div className="flex flex-auto">
+      <div className="flex w-screen justify-center">
         <div className="lg:flex lg:flex-100 space-x-4 col-start-1 m-20 ml-72" >
           {projects.map((item) => (
             <div
@@ -73,7 +74,7 @@ function Projects() {
                   {item.name}
                 </h1>
                 <div className="">
-                <p className="lg:text-xl text-2xl">{item.description}</p>
+                <p className="lg:text-xl text-3xl m-2">{item.description}</p>
                 </div>
                 <ul className="flex justify-start list-inside">
                   <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
@@ -101,7 +102,7 @@ function Projects() {
         </div>
       </div>
       <div
-        className="w-60  row-start-3 row-end-4 justify-items-end"
+        className="grid w-60 justify-items-center min-h-fit items-center"
         id="lottie2"
       >
         <Player
@@ -112,6 +113,7 @@ function Projects() {
         />
       </div>
     </section>
+    </>
   );
 }
 
