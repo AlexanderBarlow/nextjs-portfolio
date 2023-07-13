@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   return (
   <> 
-  <h1 className="h-fit">Contact</h1>;
+  {/* <footer className="absolute w-screen justify-items-center align-middle">Email: alexanderbarlow7@gmail.com</footer>; */}
   </>
 )}
 

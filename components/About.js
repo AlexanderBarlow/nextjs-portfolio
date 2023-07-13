@@ -35,7 +35,7 @@ function About() {
           <i className="fa-brands fa-twitter fa-2xl m-8" style={{"color": "#963cc3"}}/>
           </a>
         </div>
-          <p className=" lg:text-md text-white text-4xl lg:leading-relaxed leading-relaxed clear-right mt-12 w-fit m-6 justify-items-center ">
+          <p className=" lg:text-md text-white text-4xl lg:leading-relaxed leading-relaxed clear-right mt-12 w-fit m-6 justify-items-center ml-16">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}

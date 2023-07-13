@@ -26,10 +26,11 @@ export default function Home(props) {
     <>
       <div className={triscape.className} class="h-screen">
           <Header />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />    
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+
       </div>
       {consoleClear()}
     </>
