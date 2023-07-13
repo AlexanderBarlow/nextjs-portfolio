@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import myPic from "../assets/dlf10_0gfEPCHLKZ.json";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
 
 const projects = [
   {
@@ -50,7 +54,7 @@ function Projects() {
   return (
     <>
     <section
-      className="lg:snap-center h-screen lg:grid lg:grid-rows-3 justify-items-center align-middle grid-cols-1 grid-flow-row gap-4 items-center mr-2 grid" 
+      className="lg:snap-center h-screen lg:grid lg:grid-cols-3 lg:grid-rows-3 justify-items-center align-middle grid-cols-1 grid-flow-row gap-4 items-center mr-2 grid" 
       id="projects"
     >
       <a href="projects" className="hidden"></a>
@@ -71,8 +75,9 @@ function Projects() {
               {" "}
               <a href={item.deployment}>
                 <h1 className="text-purple-700 lg:text-3xl text-4xl font-bold">
-                  {item.name}
+                  {item.name} <i className="fa-solid fa-square-arrow-up-right fa-sm" style={{"color": "#b332af"}}></i>
                 </h1>
+                
                 <div className="">
                 <p className="lg:text-xl text-3xl m-2">{item.description}</p>
                 </div>
