@@ -59,7 +59,11 @@ export default function Document() {
           rel="apple-touch-startup-image"
         />
         <meta name="Alex Barlow" content="#000" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Alexander Barlow" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <style>{loader}</style>
         <script
           src="https://kit.fontawesome.com/62659e05da.js"
