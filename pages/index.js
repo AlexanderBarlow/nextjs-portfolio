@@ -7,9 +7,12 @@ import { Trispace } from "next/font/google";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import { useState, useEffect, useC } from "react";
+import PacmanLoader from "react-spinners/PacmanLoader"; 
 
 // If loading a variable font, you don't need to specify the font weight
-const triscape = Trispace({ subsets: ["latin"] });
+const triscape = Trispace({ subsets: ["latin"] })
+
 
 function consoleClear() {
   if (console) {
@@ -22,17 +25,44 @@ function consoleClear() {
 }
 
 export default function Home(props) {
+
+const [loading, setLoading] = useState(false);
+
+useEffect(() => {
+  setLoading(true)
+  setTimeout(() => {
+    setLoading(false)
+  }, 5000)
+}, []);
+
   return (
     <>
       <div className={triscape.className} class="h-screen">
-          <Header />
+      {
+        loading ?
+        <div className="flex justify-center items-center w-screen h-screen">
+        <PacmanLoader
+        color="#a21caf"
+        loading={loading}
+        size={50}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+      </div>
+        :
+        <div>
+        <Header />
         <About />
         <Skills />
         <Projects />
         <Contact />
+        </div>
+        }
+        
 
       </div>
       {consoleClear()}
+   
     </>
   );
 }

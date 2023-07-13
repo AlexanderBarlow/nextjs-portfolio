@@ -71,12 +71,6 @@ export default function Document() {
         ></script>
       </Head>
       <body className="bg-slate-900 flex mx-auto min-h-screen max-w-screen px-6 py-12">
-        <div id={"globalLoader"}>
-          <div className="loader">
-            <div />
-            <div />
-          </div>
-        </div>
         <Main />
         <NextScript />
       </body>
