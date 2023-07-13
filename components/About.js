@@ -1,7 +1,12 @@
 import React from "react";
+import ReactDOM from 'react-dom'
 import Image from "next/image";
 import myPic from "../assets/dlf10_0gfEPCHLKZ.json";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
 
 function About() {
   return (
@@ -19,6 +24,18 @@ function About() {
           <h2 className="text-5xl text-white lg:text-4xl font-bold ">
             Software Engineer
           </h2>
+          <a href="https://www.instagram.com/abarlow17/" className="">
+          <i class="fa-brands fa-instagram fa-2xl mr-8 mt-8" style={{"color": "#963cc3"}}/>
+          </a>
+          <a href="https://github.com/AlexanderBarlow?ocid=AIDcmmc3fhtaow_SEM_CjwKCAiA-dCcBhBQEiwAeWidtWXkU6iAgzfg1eQxF4OTYNXDO5o3VSvsynenWnYZDucyhfkRwcbZehoCA6oQAvD_BwE:G:s">
+          <i class="fa-brands fa-github m-8 fa-2xl" style={{"color": "#963cc3"}}/>
+          </a>
+          <a href="https://www.linkedin.com/in/alexanderlbarlow/">
+          <i class="fa-brands fa-linkedin fa-2xl m-8" style={{"color": "#963cc3"}}/>
+          </a>
+          <a href="https://twitter.com/Barlow_17">
+          <i class="fa-brands fa-twitter fa-2xl m-8" style={{"color": "#963cc3"}}/>
+          </a>
         </div>
         <div  className="mt-0" id="aboutme">
           <p className=" lg:text-md text-white text-4xl lg:leading-relaxed leading-relaxed">

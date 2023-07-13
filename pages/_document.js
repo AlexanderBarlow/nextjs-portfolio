@@ -14,6 +14,7 @@ export default function Document() {
       <body className="bg-slate-900 flex h-screen w-screen m-2">
         <Main />
         <NextScript />
+        <script src="https://kit.fontawesome.com/62659e05da.js" crossorigin="anonymous"></script>
       </body>
     </Html>
   );
