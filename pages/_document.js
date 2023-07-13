@@ -8,6 +8,7 @@ export default function Document() {
       <Head>
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icon.png"></link>
+        <link rel="apple-touch-startup-image" href="/icon.png"></link>
         <meta name="Alex Barlow" content="#000" />
         <style>{loader}</style>
         <script
