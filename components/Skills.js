@@ -6,7 +6,7 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <>
-    <div className="flex justify-center">
+    <div className="flex justify-center w-11/12">
     <section
       className="flex flex-wrap flex-row flex-100 justify-self-center justify-evenly justify-items-center h-fit w-11/12 gap-4 m-5 "
       id="skills"

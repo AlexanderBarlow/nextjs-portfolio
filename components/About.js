@@ -11,7 +11,7 @@ function About() {
   return (
     <>
     <section
-      className="items-start snap-start m-6  flex flex-100 flex-wrap flex-row justify-items-center align-middle justify-center h-fit"
+      className="items-start snap-start m-6  flex flex-100 flex-wrap flex-row justify-items-center align-middle justify-center h-fit w-11/12"
       id="about"
     >
       <a href="about" className="hidden"></a>
@@ -47,7 +47,7 @@ function About() {
             I am fluent in HTML, CSS and many things JavaScript. My interest sparked through developer tools. I would change the css to sites like Google to make the background color purple. Or, make google my name. I found the ability to display my creativy on what connects the world captivating.
           </p>
           </div>
-          <div className="flex flex-100 justify-end mr-40">
+          <div className="flex flex-100 justify-center w-fit">
         <Player
           src="https://lottie.host/24eecb54-4941-4284-b26c-133ad3a3c271/EYWD4Y3JFc.json"
           className="player w-80 h-80"

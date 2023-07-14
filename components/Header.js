@@ -17,10 +17,11 @@ const navigation = [
 
 function Header() {
   return (
-    <Disclosure as="nav" className="backdrop-blur-sm justify-center splace-content-center top-0 sticky ">
+    <>
+    <Disclosure as="nav" className="backdrop-blur justify-center place-content-center top-0 sticky w-11/12">
     {({ open }) => (
       <>
-        <div className="mx-auto max-w-8xl px-8 just m-5">
+        <div className="mx-auto max-w-8xl px-8 justify-center">
             <div className="flex flex-1 items-center justify-center">
               <div className="">
                 <div className="inline-flex space-x-4 m-2">
@@ -45,6 +46,7 @@ function Header() {
       </>
     )}
   </Disclosure>
+  </>
   )
 }
 

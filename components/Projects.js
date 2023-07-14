@@ -53,7 +53,7 @@ function classNames(...classes) {
 function Projects() {
   return (
     <>
-    <div className="">
+    <div className="w-11/12">
     <section
       className="align-middle justify-center justify-items-center flex flex-100 flex-wrap flex-row items-center max-w-screen gap-2" 
       id="projects"
@@ -68,7 +68,7 @@ function Projects() {
             <div
               className={classNames(
                 "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "rounded-md px-8 py-8 font-medium h-fit w-fit col-span-1 m-5 gap-4 flex ",
+                "rounded-md px-8 py-8 font-medium h-fit col-span-1 mb-2 gap-4 flex w-11/12 ",
                 ""
               )}
               key={item.name}
