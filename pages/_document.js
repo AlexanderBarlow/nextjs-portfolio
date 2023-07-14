@@ -70,7 +70,7 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <body className="bg-slate-900 flex mx-auto min-h-screen max-w-screen px-6 py-12">
+      <body className="bg-slate-900 flex mx-auto min-h-screen max-w-screen px-6 py-12 justify-items-center">
         <Main />
         <NextScript />
       </body>

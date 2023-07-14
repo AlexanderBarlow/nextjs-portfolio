@@ -6,11 +6,11 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <section
-      className="flex justify-items-center align-middle h-screen w-screen lg:grid grid-cols-3"
+      className="inline-flex flex-wrap flex-row flex-100 justify-items-center items-center h-fit w-fit lg:grid lg:grid-cols-3 mb-48 gap-4 justify-evenly"
       id="skills"
     >
-      <a href="skills" className="scroll-smooth hidden"></a>
-        <h1 className="text-white lg:text-4xl underline text-6xl flex-100">Skills</h1>
+      <a href="skills" className="hidden"></a>
+        <h1 className="text-white lg:text-4xl underline text-6xl flex flex-100 justify-center ">Skills</h1>
       <div className="m-5">
         <h2 className="text-purple-700 text-5xl italic font-bold">Front-End</h2>
         <ul className="text-white text-4xl">
@@ -33,12 +33,12 @@ function Skills() {
           <li>MySQL</li>
           <li>MongoDB</li>
           <li>GraphQL</li>
-          <li>API Development</li>
+          <li>Restful</li>
           <li>Mongoose</li>
         </ul>
       </div>
       <div
-        className="lg:w-70 w-60 row-start-3 row-end-4 justify-items-end"
+        className="lg:w-70 w-60 justify-end"
         id="lottie2"
       >
         <Player

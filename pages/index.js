@@ -8,7 +8,7 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { useState, useEffect, useC } from "react";
-import PacmanLoader from "react-spinners/PacmanLoader"; 
+import RingLoader from "react-spinners/RingLoader"; 
 
 // If loading a variable font, you don't need to specify the font weight
 const triscape = Trispace({ subsets: ["latin"] })
@@ -32,24 +32,24 @@ useEffect(() => {
   setLoading(true)
   setTimeout(() => {
     setLoading(false)
-  }, 5000)
+  }, 4100)
 }, []);
 
   return (
     <>
-      <div className={triscape.className} class="h-screen">
+      {/* <div className={triscape.className} class="h-screen">
       {
         loading ?
         <div className="flex justify-center items-center w-screen h-screen">
-        <PacmanLoader
+        <RingLoader
         color="#a21caf"
         loading={loading}
-        size={50}
+        size={100}
         aria-label="Loading Spinner"
         data-testid="loader"
       />
       </div>
-        :
+        : */}
         <div>
         <Header />
         <About />
@@ -57,10 +57,10 @@ useEffect(() => {
         <Projects />
         <Contact />
         </div>
-        }
+        {/* // } */}
         
 
-      </div>
+      {/* </div> */}
       {consoleClear()}
    
     </>
