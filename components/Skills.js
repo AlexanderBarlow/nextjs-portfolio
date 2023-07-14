@@ -12,10 +12,10 @@ function Skills() {
       id="skills"
     >
       <a href="skills" className="hidden"></a>
-        <h1 className="text-white  underline text-7xl flex flex-100 justify-center">Skills</h1>
+        <h1 className="text-white text-8xl flex flex-100 justify-center mb-2">Skills</h1>
       <div className="m-5">
-        <h2 className="text-purple-700 text-6xl italic font-bold">Front-End</h2>
-        <ul className="text-white text-5xl leading-relaxed">
+        <h2 className="text-purple-700 text-7xl italic font-bold">Front-End</h2>
+        <ul className="text-white text-7xl leading-relaxed">
           <li>ReactJS</li>
           <li>NextJS</li>
           <li>HandleBars</li>
@@ -27,8 +27,8 @@ function Skills() {
         </ul>
       </div>
       <div className="m-5">
-        <h2 className="text-purple-700 text-6xl italic font-bold">Back-End</h2>
-        <ul className="text-white text-5xl leading-relaxed">
+        <h2 className="text-purple-700 text-7xl italic font-bold">Back-End</h2>
+        <ul className="text-white text-7xl leading-relaxed">
           <li>NodeJS</li>
           <li>ExpressJS</li>
           <li>Sequelize</li>

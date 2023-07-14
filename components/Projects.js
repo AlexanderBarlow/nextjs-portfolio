@@ -60,7 +60,7 @@ function Projects() {
     >
       <a href="projects" className="hidden"></a>
       <div className="flex flex-100 items-center" id="lottie1">
-        <h1 className="flex flex-100 text-white text-7xl underline justify-center">Projects</h1>
+        <h1 className="flex flex-100 text-white text-8xl justify-center mb-2">Projects</h1>
       </div>
       <div className="flex flex-100 w-fit justify-center justify-items-center">
         <div className="flex flex-100 flex-wrap flex-row justify-center space-x-4 col-start-1 m-20 " >

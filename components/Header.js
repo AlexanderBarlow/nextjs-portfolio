@@ -17,20 +17,20 @@ const navigation = [
 
 function Header() {
   return (
-    <Disclosure as="nav" className="backdrop-blur-sm col sm:justify-center sm:place-content-center top-0 sticky ">
+    <Disclosure as="nav" className="backdrop-blur-sm justify-center splace-content-center top-0 sticky ">
     {({ open }) => (
       <>
-        <div className="mx-auto max-w-7xl px-8 just m-5">
+        <div className="mx-auto max-w-8xl px-8 just m-5">
             <div className="flex flex-1 items-center justify-center">
               <div className="">
-                <div className="flex space-x-4">
+                <div className="inline-flex space-x-4 m-2">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
                       className={classNames(
                          'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-5xl font-medium '
+                        'rounded-md px-3 py-2 text-6xl font-medium '
                       )}
                       
                     >
