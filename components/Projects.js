@@ -53,13 +53,14 @@ function classNames(...classes) {
 function Projects() {
   return (
     <>
+    <div className="">
     <section
-      className="align-middle justify-center justify-items-center flex flex-wrap flex-row items-center w-fit max-w-fit" 
+      className="align-middle justify-center justify-items-center flex flex-100 flex-wrap flex-row items-center max-w-screen gap-2" 
       id="projects"
     >
       <a href="projects" className="hidden"></a>
       <div className="flex flex-100 items-center" id="lottie1">
-        <h1 className="flex flex-100 text-white text-6xl underline justify-center">Projects</h1>
+        <h1 className="flex flex-100 text-white text-7xl underline justify-center">Projects</h1>
       </div>
       <div className="flex flex-100 w-fit justify-center justify-items-center">
         <div className="flex flex-100 flex-wrap flex-row justify-center space-x-4 col-start-1 m-20 " >
@@ -67,37 +68,37 @@ function Projects() {
             <div
               className={classNames(
                 "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "rounded-md px-8 py-8 font-medium h-fit w-fit col-span-1 m-5 gap-4",
+                "rounded-md px-8 py-8 font-medium h-fit w-fit col-span-1 m-5 gap-4 flex ",
                 ""
               )}
               key={item.name}
             >
               {" "}
               <a href={item.deployment}>
-                <h1 className="text-purple-700 lg:text-3xl text-4xl font-bold">
+                <h1 className="text-purple-700 lg:text-3xl text-6xl font-bold">
                   {item.name} <i className="fa-solid fa-square-arrow-up-right fa-sm" style={{"color": "#b332af"}}></i>
                 </h1>
                 
-                <div className="">
-                <p className="text-4xl m-2 leading-relaxed">{item.description}</p>
+                <div className="flex flex-wrap flex-row flex-100 max-w-screen">
+                <p className="text-5xl m-2 leading-relaxed max-w-screen w-11/12">{item.description}</p>
                 </div>
                 <ul className="flex justify-start ">
-                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
                     {item.skill1}
                   </li>
-                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
                     {item.skill2}
                   </li>
-                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
                     {item.skill3}
                   </li>
-                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
                     {item.skill4}
                   </li>
-                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
                     {item.skill5}
                   </li>
-                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
                     {item.skill6}
                   </li>
                 </ul>
@@ -118,6 +119,7 @@ function Projects() {
         />
       </div>
     </section>
+    </div>
     </>
   );
 }

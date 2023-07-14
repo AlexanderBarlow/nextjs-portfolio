@@ -30,7 +30,7 @@ function Header() {
                       href={item.href}
                       className={classNames(
                          'text-gray-300 hover:bg-gray-700 hover:text-white',
-                        'rounded-md px-3 py-2 text-4xl font-medium lg:text-2xl '
+                        'rounded-md px-3 py-2 text-5xl font-medium '
                       )}
                       
                     >

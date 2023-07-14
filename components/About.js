@@ -38,7 +38,7 @@ function About() {
           </div>
         </div>
         <div className="flex clear-right min-w-fit w-screen h-fit min-h-fit">
-          <p className=" text-white text-5xl  leading-relaxed clear-right mt-12 m-6 justify-end">
+          <p className=" text-white text-5xl leading-relaxed clear-right mt-12 m-6 justify-end w-11/12">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}
