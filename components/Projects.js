@@ -67,7 +67,7 @@ function Projects() {
             <div
               className={classNames(
                 "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "lg:rounded-md lg:px-8 lg:py-8 lg:text-sm lg:font-medium h-fit w-fit col-span-1 m-5",
+                "rounded-md px-8 py-8 font-medium h-fit w-fit col-span-1 m-5 gap-4",
                 ""
               )}
               key={item.name}
@@ -79,25 +79,25 @@ function Projects() {
                 </h1>
                 
                 <div className="">
-                <p className="lg:text-xl text-3xl m-2">{item.description}</p>
+                <p className="text-4xl m-2 leading-relaxed">{item.description}</p>
                 </div>
-                <ul className="flex justify-start list-inside">
-                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                <ul className="flex justify-start ">
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
                     {item.skill1}
                   </li>
-                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
                     {item.skill2}
                   </li>
-                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
                     {item.skill3}
                   </li>
-                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
                     {item.skill4}
                   </li>
-                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                  <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
                     {item.skill5}
                   </li>
-                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl lg:text-xl flex-25">
+                  <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-3xl lg:text-xl flex-25">
                     {item.skill6}
                   </li>
                 </ul>

@@ -11,16 +11,16 @@ function About() {
   return (
     <>
     <section
-      className="items-start snap-start m-6  flex flex-100 flex-wrap flex-row justify-items-center  align-middle justify-center"
+      className="items-start snap-start m-6  flex flex-100 flex-wrap flex-row justify-items-center align-middle justify-center h-fit"
       id="about"
     >
       <a href="about" className="hidden"></a>
         <div className="mt-9 mb-0 flex justify-start" id="name">
           <div className="flex flex-100 flex-wrap flex-row">
-          <h1 className="lg:text-5xl text-purple-900 lg:hover:underline text-6xl font-bold mb-2 flex-100">
+          <h1 className=" text-purple-900 lg:hover:underline text-7xl font-bold mb-2 flex-100">
             Alexander Barlow
           </h1>
-          <h2 className="text-5xl text-white lg:text-4xl font-bold flex-100">
+          <h2 className="text-5xl text-white font-bold flex-100">
             Software Engineer
           </h2>
           <a href="https://www.instagram.com/abarlow17/" className="">
@@ -38,7 +38,7 @@ function About() {
           </div>
         </div>
         <div className="flex clear-right min-w-fit w-screen h-fit min-h-fit">
-          <p className=" lg:text-md text-white text-4xl lg:leading-relaxed leading-relaxed clear-right mt-12 m-6 justify-end">
+          <p className=" text-white text-5xl  leading-relaxed clear-right mt-12 m-6 justify-end">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}
@@ -47,10 +47,10 @@ function About() {
             I am fluent in HTML, CSS and many things JavaScript. My interest sparked through developer tools. I would change the css to sites like Google to make the background color purple. Or, make google my name. I found the ability to display my creativy on what connects the world captivating.
           </p>
           </div>
-          <div className="flex float-right items-end ml-96">
+          <div className="flex flex-100 justify-end">
         <Player
           src="https://lottie.host/24eecb54-4941-4284-b26c-133ad3a3c271/EYWD4Y3JFc.json"
-          className="player"
+          className="player w-60 h-60"
           loop
           autoplay
         />

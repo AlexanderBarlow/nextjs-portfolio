@@ -5,15 +5,17 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 function Skills() {
   return (
+    <>
+    <div className="flex justify-center">
     <section
-      className="inline-flex flex-wrap flex-row flex-100 justify-items-center items-center h-fit w-fit  mb-48 gap-4 justify-evenly"
+      className="flex flex-wrap flex-row flex-100 justify-self-center justify-evenly justify-items-center h-fit w-fit gap-4 m-5 "
       id="skills"
     >
       <a href="skills" className="hidden"></a>
-        <h1 className="text-white lg:text-4xl underline text-6xl flex flex-100 justify-center ">Skills</h1>
+        <h1 className="text-white  underline text-6xl flex flex-100 justify-center">Skills</h1>
       <div className="m-5">
         <h2 className="text-purple-700 text-5xl italic font-bold">Front-End</h2>
-        <ul className="text-white text-4xl">
+        <ul className="text-white text-4xl leading-relaxed">
           <li>ReactJS</li>
           <li>NextJS</li>
           <li>HandleBars</li>
@@ -26,7 +28,7 @@ function Skills() {
       </div>
       <div className="m-5">
         <h2 className="text-purple-700 text-5xl italic font-bold">Back-End</h2>
-        <ul className="text-white text-4xl">
+        <ul className="text-white text-4xl leading-relaxed">
           <li>NodeJS</li>
           <li>ExpressJS</li>
           <li>Sequelize</li>
@@ -38,17 +40,19 @@ function Skills() {
         </ul>
       </div>
       <div
-        className="lg:w-70 w-60 justify-end"
+        className="flex flex-100 h-fit w-60 justify-center"
         id="lottie2"
       >
         <Player
           src="https://lottie.host/85facef7-e842-4a92-a20e-70a7a8ca835d/UY4iYNPUiI.json"
-          className="player"
+          className="player w-60 h-60" 
           loop
           autoplay
         />
       </div>
     </section>
+    </div>
+    </>
   );
 }
 

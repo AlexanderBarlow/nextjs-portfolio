@@ -20,7 +20,7 @@ function Header() {
     <Disclosure as="nav" className="backdrop-blur-sm col sm:justify-center sm:place-content-center top-0 sticky ">
     {({ open }) => (
       <>
-        <div className="mx-auto max-w-7xl px-8 just">
+        <div className="mx-auto max-w-7xl px-8 just m-5">
             <div className="flex flex-1 items-center justify-center">
               <div className="">
                 <div className="flex space-x-4">
