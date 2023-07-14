@@ -37,7 +37,7 @@ useEffect(() => {
 
   return (
     <>
-      {/* <div className={triscape.className} class="h-screen">
+      <div className={triscape.className} class="h-screen">
       {
         loading ?
         <div className="flex justify-center items-center w-screen h-screen">
@@ -49,7 +49,7 @@ useEffect(() => {
         data-testid="loader"
       />
       </div>
-        : */}
+        :
         <div>
         <Header />
         <About />
@@ -57,10 +57,10 @@ useEffect(() => {
         <Projects />
         <Contact />
         </div>
-        {/* // } */}
+        } 
         
 
-      {/* </div> */}
+       </div> 
       {consoleClear()}
    
     </>

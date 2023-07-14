@@ -54,15 +54,15 @@ function Projects() {
   return (
     <>
     <section
-      className="lg:snap-center h-screen lg:grid lg:grid-cols-3 lg:grid-rows-3 justify-items-center align-middle grid-cols-1 grid-flow-row gap-4 items-center mr-2 grid" 
+      className="align-middle justify-center justify-items-center flex flex-wrap flex-row items-center w-fit max-w-fit" 
       id="projects"
     >
       <a href="projects" className="hidden"></a>
-      <div className="flex flex-100" id="lottie1">
-        <h1 className="text-white text-6xl underline">Projects</h1>
+      <div className="flex flex-100 items-center" id="lottie1">
+        <h1 className="flex flex-100 text-white text-6xl underline justify-center">Projects</h1>
       </div>
-      <div className="flex w-screen justify-center">
-        <div className="lg:flex lg:flex-100 space-x-4 col-start-1 m-20 ml-72" >
+      <div className="flex flex-100 w-fit justify-center justify-items-center">
+        <div className="flex flex-100 flex-wrap flex-row justify-center space-x-4 col-start-1 m-20 " >
           {projects.map((item) => (
             <div
               className={classNames(
