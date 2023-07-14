@@ -69,11 +69,13 @@ export default function Document() {
           src="https://kit.fontawesome.com/62659e05da.js"
           crossorigin="anonymous"
         ></script>
-      </Head> 
-      <body className="bg-slate-900 flex flex-100 flex-wrap flex-row min-h-screen  max-w-screen justify-items-center m-0 overflow-x-clip">
+      </Head>
+      <div>
+      <body className="bg-slate-900 flex flex-100 flex-wrap flex-row min-h-screen  max-w-screen justify-items-center ml-5 overflow-x-clip">
         <Main />
         <NextScript />
       </body>
+      </div>
     </Html>
   );
 }
