@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
+// Import the PDF file
+import resumePDF from "../public/current_resume.pdf"; 
+
 function About() {
   return (
     <>
@@ -46,6 +49,12 @@ function About() {
                 style={{ color: "#963cc3" }}
               />
             </a>
+            <a href={resumePDF} download="current_resume.pdf">
+              <i
+                className="fa-solid fa-file fa-5x m-8 hover:fa-bounce"
+                style={{ color: "#963cc3", cursor: "pointer" }}
+              />
+            </a>
           </div>
         </div>
         <div className="flex lg:w-fit lg:h-fit lg:justify-center min-w-fit w-screen h-fit min-h-fit">
@@ -56,10 +65,8 @@ function About() {
               accessible and gravitating!
             </span>{" "}
             I am fluent in HTML, CSS and many things JavaScript. My interest
-            sparked through developer tools. I would change the css to sites
-            like Google to make the background color purple. Or, make google my
-            name. I found the ability to display my creativy on what connects
-            the world captivating.
+            sparked through developer tools. I would change the CSS on sites
+            like Google to make the background color purple or change Google to my name. I found the ability to display my creativity on what connects the world captivating.
           </p>
         </div>
         <div className="lg:flex lg:flex-100 lg:h-fit lg:w-fit lg:justify-center lg:align-middle hidden lg:z-0">
