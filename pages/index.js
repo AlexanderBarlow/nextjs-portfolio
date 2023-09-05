@@ -8,11 +8,10 @@ import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import { useState, useEffect, useC } from "react";
-import RingLoader from "react-spinners/RingLoader"; 
+import RingLoader from "react-spinners/RingLoader";
 
 // If loading a variable font, you don't need to specify the font weight
-const triscape = Trispace({ subsets: ["latin"] })
-
+const triscape = Trispace({ subsets: ["latin"] });
 
 function consoleClear() {
   if (console) {
@@ -25,44 +24,39 @@ function consoleClear() {
 }
 
 export default function Home(props) {
+  const [loading, setLoading] = useState(false);
 
-const [loading, setLoading] = useState(false);
-
-useEffect(() => {
-  setLoading(true)
-  setTimeout(() => {
-    setLoading(false)
-  }, 4100)
-}, []);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4100);
+  }, []);
 
   return (
     <>
       <div className={triscape.className} class="h-screen">
-      {
-        loading ?
-        <div className="flex justify-center items-center w-screen h-screen">
-        <RingLoader
-        color="#a21caf"
-        loading={loading}
-        size={100}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-      />
+        {loading ? (
+          <div className="flex justify-center items-center w-screen h-screen">
+            <RingLoader
+              color="#a21caf"
+              loading={loading}
+              size={100}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          </div>
+        ) : (
+          <>
+            <Header />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+          </>
+        )}
       </div>
-        :
-        <>
-        <Header />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        </>
-        } 
-        
-
-       </div> 
       {consoleClear()}
-   
     </>
   );
 }
