@@ -18,7 +18,7 @@ function Skills() {
         <ul className="text-white text-7xl lg:text-5xl lg:leading-relaxed leading-relaxed">
           <li>ReactJS</li>
           <li>NextJS</li>
-          <li>HandleBars</li>
+          <li>Typescript</li>
           <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS</li>
