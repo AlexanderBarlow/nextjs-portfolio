@@ -6,9 +6,9 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <>
-    <div className="flex lg:h-screen justify-center w-11/12">
+    <div className="flex lg:flex lg:w-screen lg:h-screen lg:justify-center lg:align-middle h-fit w-fit justify-center align-middle">
     <section
-      className="flex flex-wrap flex-row flex-100 justify-self-center justify-evenly justify-items-center h-fit w-11/12 gap-4 m-5 lg:w-fit"
+      className="flex flex-wrap flex-row flex-100 justify-self-center justify-evenly justify-items-center h-fit w-11/12 gap-4 m-5"
       id="skills"
     >
       <a href="skills" className="hidden"></a>
@@ -40,7 +40,7 @@ function Skills() {
         </ul>
       </div>
       <div
-        className="flex flex-100 h-fit w-60 justify-center"
+        className="lg:flex lg:flex-100 lg:h-fit lg:w-fit lg:justify-center lg:align-middle hidden"
         id="lottie2"
       >
         <Player

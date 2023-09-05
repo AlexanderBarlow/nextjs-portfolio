@@ -53,7 +53,7 @@ function classNames(...classes) {
 function Projects() {
   return (
     <>
-    <div className="lg:flex w-11/12 lg:w-fit lg:h-screen">
+    <div className="lg:flex lg:w-fit lg:h-screen flex h- w-fit justify-center align-middle">
     <section
       className="align-middle justify-center justify-items-center flex flex-100 flex-wrap flex-row items-center max-w-screen gap-2" 
       id="projects"
@@ -63,12 +63,12 @@ function Projects() {
         <h1 className="flex flex-100 text-white text-8xl justify-center mb-2">Projects</h1>
       </div>
       <div className="flex flex-100 w-fit justify-center justify-items-center">
-        <div className="flex flex-100 flex-wrap flex-row justify-center space-x-4 col-start-1 m-20 " >
+        <div className="flex flex-100 flex-wrap flex-row justify-center space-x-4  m-20 " >
           {projects.map((item) => (
             <div
               className={classNames(
                 "text-gray-300 hover:bg-gray-700 hover:text-white",
-                "rounded-md px-8 py-8 font-medium h-fit col-span-1 mb-2 gap-4 flex w-11/12 ",
+                "rounded-md px-8 py-8 font-medium h-fit  mb-2 gap-4 flex w-11/12 ",
                 ""
               )}
               key={item.name}

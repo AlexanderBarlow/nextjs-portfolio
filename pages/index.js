@@ -39,17 +39,17 @@ useEffect(() => {
     <>
       <div className={triscape.className} class="h-screen">
       {
-      //   loading ?
-      //   <div className="flex justify-center items-center w-screen h-screen">
-      //   <RingLoader
-      //   color="#a21caf"
-      //   loading={loading}
-      //   size={100}
-      //   aria-label="Loading Spinner"
-      //   data-testid="loader"
-      // />
-      // </div>
-      //   :
+        loading ?
+        <div className="flex justify-center items-center w-screen h-screen">
+        <RingLoader
+        color="#a21caf"
+        loading={loading}
+        size={100}
+        aria-label="Loading Spinner"
+        data-testid="loader"
+      />
+      </div>
+        :
         <div>
         <Header />
         <About />

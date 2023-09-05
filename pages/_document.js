@@ -71,7 +71,7 @@ export default function Document() {
         ></script>
       </Head>
       <div>
-      <body className="bg-slate-900 flex flex-100 flex-wrap flex-row min-h-screen  max-w-screen justify-items-center ml-5">
+      <body className="bg-slate-900 flex lg:flex h-fit w-fit justify-center align-middle m-2">
         <Main />
         <NextScript />
       </body>
