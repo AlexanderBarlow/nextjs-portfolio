@@ -18,7 +18,7 @@ const navigation = [
 function Header() {
   return (
     <>
-    <Disclosure as="nav" className="lg:flex lg:h-fit lg:w-screen lg:justify-center lg:align-middle backdrop-blur flex justify-center place-content-center top-0 sticky w-fit h-fit align-middle">
+    <Disclosure as="nav" className="lg:flex lg:h-fit lg:w-screen lg:justify-center lg:align-middle backdrop-blur flex justify-center place-content-center top-0 sticky w-fit h-fit align-middle mb-5 lg:z-10">
     {({ open }) => (
       <>
         <div className="mx-auto max-w-8xl px-8 justify-center">

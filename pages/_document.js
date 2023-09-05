@@ -70,12 +70,12 @@ export default function Document() {
           crossorigin="anonymous"
         ></script>
       </Head>
-      <div>
-      <body className="bg-slate-900 flex lg:flex h-fit w-fit justify-center align-middle m-2">
+      
+      <body className="bg-slate-900 flex lg:flex w-fit justify-center align-middle m-2">
         <Main />
         <NextScript />
       </body>
-      </div>
+      
     </Html>
   );
 }

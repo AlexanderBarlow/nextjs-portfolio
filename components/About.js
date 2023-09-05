@@ -47,7 +47,7 @@ function About() {
             I am fluent in HTML, CSS and many things JavaScript. My interest sparked through developer tools. I would change the css to sites like Google to make the background color purple. Or, make google my name. I found the ability to display my creativy on what connects the world captivating.
           </p>
           </div>
-          <div className="lg:flex lg:flex-100 lg:h-fit lg:w-fit lg:justify-center lg:align-middle hidden">
+          <div className="lg:flex lg:flex-100 lg:h-fit lg:w-fit lg:justify-center lg:align-middle hidden lg:z-0">
         <Player
           src="https://lottie.host/24eecb54-4941-4284-b26c-133ad3a3c271/EYWD4Y3JFc.json"
           className="player w-60 h-60"

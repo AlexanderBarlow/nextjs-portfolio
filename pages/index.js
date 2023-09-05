@@ -50,13 +50,13 @@ useEffect(() => {
       />
       </div>
         :
-        <div>
+        <>
         <Header />
         <About />
         <Skills />
         <Projects />
         <Contact />
-        </div>
+        </>
         } 
         
 
