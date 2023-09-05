@@ -53,7 +53,7 @@ function classNames(...classes) {
 function Projects() {
   return (
     <>
-    <div className="w-11/12">
+    <div className="lg:flex w-11/12 lg:w-fit lg:h-screen">
     <section
       className="align-middle justify-center justify-items-center flex flex-100 flex-wrap flex-row items-center max-w-screen gap-2" 
       id="projects"

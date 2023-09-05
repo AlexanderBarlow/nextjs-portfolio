@@ -11,16 +11,16 @@ function About() {
   return (
     <>
     <section
-      className="items-start snap-start m-6  flex flex-100 flex-wrap flex-row justify-items-center align-middle justify-center h-fit w-11/12"
+      className="lg:flex lg:h-screen lg:justify-center first-line:items-start snap-start m-6  flex flex-100 flex-wrap flex-row justify-items-center align-middle justify-center h-fit w-11/12"
       id="about"
     >
       <a href="about" className="hidden"></a>
         <div className="mt-9 mb-0 flex justify-start" id="name">
           <div className="flex flex-100 flex-wrap flex-row">
-          <h1 className=" text-purple-900 lg:hover:underline text-8xl font-bold mb-2 flex-100">
+          <h1 className=" text-purple-900 lg:hover:underline lg:text-8xl text-8xl font-bold mb-2 flex-100">
             Alexander Barlow
           </h1>
-          <h2 className="text-7xl text-white font-bold flex-100">
+          <h2 className="text-7xl lg:text-6xl text-white font-bold flex-100">
             Software Engineer
           </h2>
           <a href="https://www.instagram.com/abarlow17/" className="">
@@ -37,8 +37,8 @@ function About() {
           </a>
           </div>
         </div>
-        <div className="flex clear-right min-w-fit w-screen h-fit min-h-fit">
-          <p className=" text-white text-7xl leading-relaxed clear-right mt-12 m-6 justify-end w-11/12">
+        <div className="flex clear-right lg:w-fit lg:h-screen lg:justify-center min-w-fit w-screen h-fit min-h-fit">
+          <p className=" text-white text-7xl lg:text-5xl lg:leading-relaxed leading-relaxed clear-right mt-12 m-6 justify-end w-11/12">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}

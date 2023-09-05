@@ -6,16 +6,16 @@ import { Player } from "@lottiefiles/react-lottie-player";
 function Skills() {
   return (
     <>
-    <div className="flex justify-center w-11/12">
+    <div className="flex lg:h-screen justify-center w-11/12">
     <section
-      className="flex flex-wrap flex-row flex-100 justify-self-center justify-evenly justify-items-center h-fit w-11/12 gap-4 m-5 "
+      className="flex flex-wrap flex-row flex-100 justify-self-center justify-evenly justify-items-center h-fit w-11/12 gap-4 m-5 lg:w-fit"
       id="skills"
     >
       <a href="skills" className="hidden"></a>
         <h1 className="text-white text-8xl flex flex-100 justify-center mb-2">Skills</h1>
       <div className="m-5">
         <h2 className="text-purple-700 text-7xl italic font-bold">Front-End</h2>
-        <ul className="text-white text-7xl leading-relaxed">
+        <ul className="text-white text-7xl lg:text-5xl lg:leading-relaxed leading-relaxed">
           <li>ReactJS</li>
           <li>NextJS</li>
           <li>HandleBars</li>
@@ -28,7 +28,7 @@ function Skills() {
       </div>
       <div className="m-5">
         <h2 className="text-purple-700 text-7xl italic font-bold">Back-End</h2>
-        <ul className="text-white text-7xl leading-relaxed">
+        <ul className="text-white text-7xl lg:text-5xl lg:leading-relaxed leading-relaxed">
           <li>NodeJS</li>
           <li>ExpressJS</li>
           <li>Sequelize</li>
