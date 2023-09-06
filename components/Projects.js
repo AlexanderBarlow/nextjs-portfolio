@@ -56,12 +56,10 @@ function Projects() {
   return (
     <>
       <div className="xl:flex xl:w-fit xl:h-screen lg:flex lg:w-fit lg:h-screen sm:h-fit sm:w-fit sm:flex sm:justify-center sm:align-middle sm:mt-36">
-        <section
-          id="projects"
-        >
+        <section id="projects">
           <a href="projects" className="hidden"></a>
           <div className="flex flex-100 items-center" id="lottie1">
-            <h1 className="flex flex-100 text-white lg:text-6xl sm:text-8xl  sm:justify-center sm:align-middle"> 
+            <h1 className="flex flex-100 text-white lg:text-6xl sm:text-8xl  sm:justify-center sm:align-middle">
               Projects
             </h1>
           </div>
