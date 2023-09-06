@@ -55,14 +55,13 @@ function classNames(...classes) {
 function Projects() {
   return (
     <>
-      <div className="xl:flex xl:w-fit xl:h-screen flex h- w-fit justify-center align-middle lg:flex lg:w-fit lg:h-screen">
+      <div className="xl:flex xl:w-fit xl:h-screen lg:flex lg:w-fit lg:h-screen sm:h-fit sm:w-fit sm:flex sm:justify-center sm:align-middle sm:mt-36">
         <section
-          className="align-middle justify-center justify-items-center flex flex-100 flex-wrap flex-row items-center max-w-screen gap-2"
           id="projects"
         >
           <a href="projects" className="hidden"></a>
           <div className="flex flex-100 items-center" id="lottie1">
-            <h1 className="flex flex-100 text-white text-8xl justify-center mb-2 lg:text-6xl">
+            <h1 className="flex flex-100 text-white lg:text-6xl sm:text-8xl  sm:justify-center sm:align-middle"> 
               Projects
             </h1>
           </div>
@@ -72,14 +71,14 @@ function Projects() {
                 <div
                   className={classNames(
                     "text-gray-300 hover:bg-gray-700 hover:text-white",
-                    "rounded-md px-8 py-8 font-medium h-fit  mb-2 gap-4 flex w-11/12 ",
+                    "rounded-md px-8 py-8 font-medium h-fit mb-2 gap-4 flex w-11/12 ",
                     ""
                   )}
                   key={item.name}
                 >
                   {" "}
                   <a href={item.deployment}>
-                    <h1 className="text-purple-700 xl:text-3xl text-6xl font-bold lg:text-3xl">
+                    <h1 className="text-purple-700 xl:text-3xl font-bold lg:text-3xl sm:text-7xl">
                       {item.name}{" "}
                       <i
                         className="fa-solid fa-square-arrow-up-right fa-sm"
@@ -88,27 +87,27 @@ function Projects() {
                     </h1>
 
                     <div className="flex flex-wrap flex-row flex-100 max-w-screen">
-                      <p className="text-5xl m-2 leading-relaxed max-w-screen w-11/12 lg:text-3xl">
+                      <p className="m-2 leading-relaxed max-w-screen w-11/12 lg:text-3xl sm:text-6xl sm:leading-normal">
                         {item.description}
                       </p>
                     </div>
-                    <ul className="flex justify-start ">
-                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
+                    <ul className="flex flex-wrap justify-start ">
+                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 sm:text-6xl lg:text-xl xl:text-xl flex-25">
                         {item.skill1}
                       </li>
-                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
+                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 sm:text-6xl lg:text-xl xl:text-xl flex-25">
                         {item.skill2}
                       </li>
-                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
+                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 sm:text-6xl lg:text-xl xl:text-xl flex-25">
                         {item.skill3}
                       </li>
-                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
+                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 sm:text-6xl lg:text-xl xl:text-xl flex-25">
                         {item.skill4}
                       </li>
-                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
+                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 sm:text-6xl lg:text-xl xl:text-xl flex-25">
                         {item.skill5}
                       </li>
-                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
+                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 sm:text-6xl lg:text-xl xl:text-xl flex-25">
                         {item.skill6}
                       </li>
                     </ul>

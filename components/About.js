@@ -13,18 +13,19 @@ function About() {
   return (
     <>
       <section
-        className="xl:flex xl:h-screen xl:w-screen xl:align-middle xl:justify-center xl:flex-wrap h-fit flex w-fit justify-center align-middle flex-wrap lg:flex lg:w-screen lg:h-screen lg:justify-center lg:align-middle lg:flex-wrap"
+        className="xl:flex xl:h-screen xl:w-screen xl:align-middle xl:justify-center xl:flex-wrap lg:flex lg:w-fit lg:h-screen lg:justify-center lg:align-middle lg:flex-wrap sm:h-fit sm:mt-36 ml-12 lg:mr-36 lg:mt-12"
         id="about"
       >
         <a href="about" className="hidden"></a>
         <div className="mt-9 mb-0 flex lg:mt-2 lg:mb-0" id="name">
           <div className="flex flex-100 flex-wrap flex-row">
-            <h1 className=" text-purple-900 xl:hover:underline xl:text-8xl text-8xl font-bold mb-2 flex-100 lg:text-6xl lg:leading-none lg:mb-0">
+            <h1 className=" text-purple-900 xl:hover:underline xl:text-8xl text-8xl font-bold mb-2 flex-100 lg:text-6xl lg:leading-none lg:mb-0 sm:mb-5">
               Alexander Barlow
             </h1>
-            <h2 className="text-7xl xl:text-5xl text-white font-bold flex-100 lg:text-5xl">
+            <h2 className="text-7xl xl:text-5xl text-white font-bold flex-100 lg:text-4xl">
               Full-Stack Web Developer
             </h2>
+            <div>
             <a href="https://www.instagram.com/abarlow17/">
               <i
                 className="fa-brands fa-instagram fa-5x mr-8 mt-8 lg:text-6xl"
@@ -51,14 +52,15 @@ function About() {
             </a>
             <a href={resumePDF} download="current_resume.pdf">
               <i
-                className="fa-solid fa-file fa-5x m-8 hover:fa-bounce lg:text-6xl"
-                style={{ color: "#963cc3", cursor: "pointer" }}
+                className="fa-solid fa-file fa-5x m-8 hover:fa-bounce lg:text-6xl lg:cursor-pointer"
+                style={{ color: "#963cc3" }}
               />
             </a>
+            </div>
           </div>
         </div>
-        <div className="flex xl:w-fit xl:h-fit xl:justify-center min-w-fit w-screen h-fit min-h-fit lg:w-screen lg:h-fit lg:flex lg:justify-center">
-          <p className=" text-white text-7xl xl:text-5xl xl:leading-relaxed lg:text-3xl lg:leading-relaxed leading-relaxed clear-right mt-12 m-6 justify-end w-11/12">
+        <div className="flex flex-wrap xl:w-fit xl:h-fit xl:justify-center lg:w-fit lg:h-fit lg:flex lg:justify-center">
+          <p className=" text-white text-7xl xl:text-5xl xl:leading-relaxed lg:text-3xl lg:leading-loose sm:leading-normal">
             I am a Full Stack Web Developer dedicated to making UI/UXs that are
             <span className="italic text-purple-500 underline">
               {" "}
