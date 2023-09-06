@@ -84,8 +84,8 @@ function Projects() {
                       ></i>
                     </h1>
 
-                    <div className="flex flex-wrap flex-row flex-100 max-w-screen">
-                      <p className="m-2 leading-relaxed max-w-screen w-11/12 lg:text-3xl sm:text-6xl sm:leading-normal">
+                    <div className="flex flex-wrap flex-row flex-100 h-fit">
+                      <p className="m-2 leading-relaxed h-fit w-11/12 lg:text-3xl sm:text-6xl sm:leading-normal">
                         {item.description}
                       </p>
                     </div>
