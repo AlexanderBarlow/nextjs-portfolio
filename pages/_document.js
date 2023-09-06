@@ -71,7 +71,7 @@ export default function Document() {
         ></script>
       </Head>
 
-      <body className="bg-slate-900 flex lg:flex w-fit justify-center align-middle m-2">
+      <body className="bg-slate-900 flex lg:flex w-fit justify-center align-middle">
         <Main />
         <NextScript />
       </body>

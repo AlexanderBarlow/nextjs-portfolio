@@ -14,11 +14,16 @@ module.exports = {
       },
       flex: {
         '100': '0 0 100%'
+      },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '2000px',
+        '2xl': '1536px'
       }
     },
-    // colors: {
-    //   'blue': '#1D267D'
-    // }
+    // You can also include other properties like colors here if needed
   },
   plugins: [],
 }

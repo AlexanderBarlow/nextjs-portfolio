@@ -10,7 +10,7 @@ const projects = [
   {
     name: "Password Tracker",
     description:
-      "A fullstack application. This application utilizes MySQL, Rest APIs and HandleBarsJS for server side rendering. This application authenticates users to create user sessions. Passwords can be added to help users keep track of them given some additional criteria. Passwords are encrypted upon storage and decrypted upon retrieval using a custom algorithm.",
+      "A fullstack application. This application utilizes MySQL, Rest APIs and HandleBarsJS for server side rendering. This application authenticates users to create user sessions. Passwords can be added to help users keep track of them given some additional criteria. Passwords are encrypted upon storage and decrypted upon retrieval using a custom axlorithm.",
     deployment: "https://password-tracker.herokuapp.com/login",
     repo: "https://github.com/AlexanderBarlow/password-tracker",
     skill1: "HandleBarsJS",
@@ -55,14 +55,14 @@ function classNames(...classes) {
 function Projects() {
   return (
     <>
-      <div className="lg:flex lg:w-fit lg:h-screen flex h- w-fit justify-center align-middle">
+      <div className="xl:flex xl:w-fit xl:h-screen flex h- w-fit justify-center align-middle lg:flex lg:w-fit lg:h-screen">
         <section
           className="align-middle justify-center justify-items-center flex flex-100 flex-wrap flex-row items-center max-w-screen gap-2"
           id="projects"
         >
           <a href="projects" className="hidden"></a>
           <div className="flex flex-100 items-center" id="lottie1">
-            <h1 className="flex flex-100 text-white text-8xl justify-center mb-2">
+            <h1 className="flex flex-100 text-white text-8xl justify-center mb-2 lg:text-6xl">
               Projects
             </h1>
           </div>
@@ -79,7 +79,7 @@ function Projects() {
                 >
                   {" "}
                   <a href={item.deployment}>
-                    <h1 className="text-purple-700 lg:text-3xl text-6xl font-bold">
+                    <h1 className="text-purple-700 xl:text-3xl text-6xl font-bold lg:text-3xl">
                       {item.name}{" "}
                       <i
                         className="fa-solid fa-square-arrow-up-right fa-sm"
@@ -88,27 +88,27 @@ function Projects() {
                     </h1>
 
                     <div className="flex flex-wrap flex-row flex-100 max-w-screen">
-                      <p className="text-5xl m-2 leading-relaxed max-w-screen w-11/12">
+                      <p className="text-5xl m-2 leading-relaxed max-w-screen w-11/12 lg:text-3xl">
                         {item.description}
                       </p>
                     </div>
                     <ul className="flex justify-start ">
-                      <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
+                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
                         {item.skill1}
                       </li>
-                      <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
+                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
                         {item.skill2}
                       </li>
-                      <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
+                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
                         {item.skill3}
                       </li>
-                      <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
+                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
                         {item.skill4}
                       </li>
-                      <li className="bg-purple-950 text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
+                      <li className="bg-purple-950 text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
                         {item.skill5}
                       </li>
-                      <li className="bg-purple-950  text-purple-400 font-semibold  lg:py-2 lg:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-4xl lg:text-xl flex-25">
+                      <li className="bg-purple-950  text-purple-400 font-semibold  xl:py-2 xl:px-4 py-1 px-1 border border-purple-500 rounded w-fit m-2 text-2xl xl:text-xl flex-25">
                         {item.skill6}
                       </li>
                     </ul>

@@ -19,7 +19,7 @@ function Header() {
     <>
       <Disclosure
         as="nav"
-        className="lg:flex lg:h-fit lg:w-screen lg:justify-center lg:align-middle backdrop-blur flex justify-center place-content-center top-0 sticky w-fit h-fit align-middle mb-5 lg:z-10"
+        className="xl:flex xl:h-fit xl:w-screen xl:justify-center xl:align-middle backdrop-blur flex justify-center place-content-center top-0 sticky w-fit h-fit align-middle mb-5 xl:z-10 lg:flex lg:h-fit lg:w-screen lg:justify-end lg:align-middle"
       >
         {({ open }) => (
           <>
@@ -33,7 +33,7 @@ function Header() {
                         href={item.href}
                         className={classNames(
                           "text-gray-300 hover:bg-gray-700 hover:text-white",
-                          "rounded-md px-3 py-2 text-6xl lg:text-4xl font-medium "
+                          "rounded-lg px-3 py-2 text-6xl xl:text-4xl font-medium lg:text-3xl"
                         )}
                       >
                         {item.name}
