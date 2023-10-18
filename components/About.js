@@ -7,7 +7,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 
 // Import the PDF file
-import resumePDF from "../public/current_resume.pdf";
+import resumePDF from "../public/currentresume.pdf";
 
 function About() {
   return (
