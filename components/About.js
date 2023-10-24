@@ -66,11 +66,13 @@ function About() {
               {" "}
               accessible and gravitating!
             </span>{" "}
-            I am fluent in HTML, CSS and many things JavaScript. My interest
-            sparked through developer tools. I would change the CSS on sites
-            like Google to make the background color purple or change Google to
-            my name. I found the ability to display my creativity on what
-            connects the world captivating.
+            I am Full Stack Web Developer with a passion for creating user
+            friendly applications. I have experience with HTML, CSS, JavaScript,
+            React, Node.js, Express, MongoDB, and MySQL. I am a team player and
+            I am always looking to learn new technologies. I am a graduate of
+            the University of Pennsylvania's Full Stack Web Development
+            Bootcamp. I am currently looking for a position as a Full Stack Web
+            Developer.
           </p>
         </div>
         <div className="xl:flex xl:flex-100 xl:h-fit xl:w-fit xl:justify-center xl:align-middle hidden xl:z-0">
