@@ -8,6 +8,19 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
+    name: "NestEase",
+    description:
+      "This is a full stack application using the MERN stack. User sessions are verified through JWT (Json Web Token). This application allows users to create a profile and add rentable items to nearby users. They can also access the marketplace to rent items from other users in the area.",
+    deployment: "https://nestease.herokuapp.com/",
+    repo: "https://github.com/AlexanderBarlow/rental-site",
+    skill1: "ReactJS",
+    skill2: "NodeJS",
+    skill3: "MongoDB",
+    skill4: "JWT",
+    skill5: "Materialize",
+    skill6: "GraphQL",
+  },
+  {
     name: "Password Tracker",
     description:
       "A fullstack application. This application utilizes MySQL, Rest APIs and HandleBarsJS for server side rendering. This application authenticates users to create user sessions. Passwords can be added to help users keep track of them given some additional criteria. Passwords are encrypted upon storage and decrypted upon retrieval using a custom axlorithm.",
@@ -32,19 +45,6 @@ const projects = [
     skill4: "API",
     skill5: "Cookies",
     skill6: "Session Cache",
-  },
-  {
-    name: "NestEase",
-    description:
-      "This is a full stack application using the MERN stack. User sessions are verified through JWT (Json Web Token). This application allows users to create a profile and add rentable items to nearby users. They can also access the marketplace to rent items from other users in the area.",
-    deployment: "https://nestease.herokuapp.com/",
-    repo: "https://github.com/AlexanderBarlow/rental-site",
-    skill1: "ReactJS",
-    skill2: "NodeJS",
-    skill3: "MongoDB",
-    skill4: "JWT",
-    skill5: "Materialize",
-    skill6: "GraphQL",
   },
 ];
 
