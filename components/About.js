@@ -61,26 +61,10 @@ function About() {
         </div>
         <div className="flex flex-wrap xl:w-fit xl:h-fit xl:justify-center lg:w-fit lg:h-fit lg:flex lg:justify-center">
           <p className=" text-white text-7xl xl:text-5xl xl:leading-relaxed lg:text-3xl lg:leading-loose sm:leading-normal">
-            I am Full Stack Web Developer with a passion for creating user
-            friendly applications that are
-            <span className="italic text-purple-500 underline">
-              {" "}
-              accessible and gravitating!
-            </span>{" "}
-            . I have experience with HTML, CSS, JavaScript, React, Node.js,
-            Express, MongoDB, and MySQL. I am a team player and I am always
-            looking to learn new technologies. I am a graduate of the University
-            of Pennsylvania's Full Stack Web Development Bootcamp. I am
-            currently looking for a position as a Full Stack Web Developer.
+            I have experience in planning, developing and mantaining user
+            friendly websites. Below, you can find some of my projects as well
+            as the technologies I am familiar with.
           </p>
-        </div>
-        <div className="xl:flex xl:flex-100 xl:h-fit xl:w-fit xl:justify-center xl:align-middle hidden xl:z-0">
-          <Player
-            src="https://lottie.host/24eecb54-4941-4284-b26c-133ad3a3c271/EYWD4Y3JFc.json"
-            className="player w-60 h-60"
-            loop
-            autoplay
-          />
         </div>
       </section>
     </>
