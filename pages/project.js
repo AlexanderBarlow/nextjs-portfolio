@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Octokit } from "octokit";
 import { useRouter } from "next/router";
+require("dotenv").config();
 
 export default function AllProjects() {
   const [userData, setUserData] = useState([]);
@@ -8,7 +9,7 @@ export default function AllProjects() {
   const router = useRouter();
 
   const octokit = new Octokit({
-    auth: "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",
+    auth: process.env.TOKEN
   });
 
   useEffect(() => {

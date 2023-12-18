@@ -135,7 +135,7 @@ function Projects() {
               transform: "translateX(-50%)",
             }}
           >
-            <h1 className="text-lg sm:text-5xl sm:m-2 sm:p-2">View All Projects</h1>
+            <h1 className="text-lg sm:text-5xl sm:m-2 sm:p-2 md:text-2xl lg:text-xl">View All Projects</h1>
           </button>
         </section>
       </div>
