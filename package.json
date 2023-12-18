@@ -15,10 +15,12 @@
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
     "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@octokit/rest": "^20.0.2",
     "@previewjs/cli": "^1.24.1",
     "font-awesome": "^4.7.0",
     "next": "13.4.8",
     "next-pwa": "^5.6.0",
+    "octokit": "^3.1.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-spinners": "^0.13.8"

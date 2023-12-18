@@ -5,6 +5,9 @@ import { Player } from "@lottiefiles/react-lottie-player";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/router";
+
+
 
 const projects = [
   {
@@ -53,6 +56,13 @@ function classNames(...classes) {
 }
 
 function Projects() {
+
+    const router = useRouter();
+
+  function viewProjects() {
+    router.push("/project");
+  }
+
   return (
     <>
       <div className="xl:flex xl:w-fit xl:h-screen lg:flex lg:w-fit lg:h-screen sm:h-fit sm:w-fit sm:flex sm:justify-center sm:align-middle sm:mt-36">
@@ -114,17 +124,19 @@ function Projects() {
               ))}
             </div>
           </div>
-          <div
-            className="grid w-60 justify-items-center min-h-fit items-center"
-            id="lottie2"
+          <button
+            type="button"
+            onClick={viewProjects}
+            className="bg-purple-700 text-white py-3 px-6 rounded-full mt-8 hover:bg-purple-900 focus:outline-none focus:shadow-outline-purple active:bg-purple-800"
+            style={{
+              position: "fixed",
+              bottom: "2rem",
+              left: "50%",
+              transform: "translateX(-50%)",
+            }}
           >
-            <Player
-              src="https://lottie.host/4b0df32b-269c-4272-86cb-a79bdf0925ed/1azfI1QwGd.json"
-              className="player"
-              loop
-              autoplay
-            />
-          </div>
+            <h1 className="text-lg sm:text-5xl sm:m-2 sm:p-2">View All Projects</h1>
+          </button>
         </section>
       </div>
     </>

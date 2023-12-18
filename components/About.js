@@ -19,7 +19,7 @@ function About() {
         <a href="about" className="hidden"></a>
         <div className="mt-9 mb-0 flex lg:mt-2 lg:mb-0" id="name">
           <div className="flex flex-100 flex-wrap flex-row">
-            <h1 className=" text-purple-900 xl:hover:underline xl:text-7xl text-8xl font-bold mb-2 flex-100 lg:text-6xl lg:leading-none lg:mb-0 sm:mb-5">
+            <h1 className=" text-purple-900 xl:hover:underline xl:text-7xl text-8xl font-bold flex-100 lg:text-6xl lg:leading-none lg:mb-0 sm:mb-5">
               Alexander Barlow
             </h1>
             <h2 className="text-7xl xl:text-5xl text-white font-bold flex-100 lg:text-4xl">
