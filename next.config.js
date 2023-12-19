@@ -1,19 +1,27 @@
 /** @type {import('next').NextConfig} */
 
-const withPWA = require('next-pwa')({
-  dest: 'public',
+// Import dotenv package
+const dotenv = require("dotenv");
+
+// Load environment variables from .env file
+dotenv.config();
+
+const withPWA = require("next-pwa")({
+  dest: "public",
   register: true,
-  disable: process.env.NODE_ENV === 'development',
-  skipWaiting: true
+  disable: process.env.NODE_ENV === "development",
+  skipWaiting: true,
 });
 
 const nextConfig = withPWA({
-  reactStrictMode: true
+  reactStrictMode: true,
 });
 
 module.exports = {
   ...nextConfig, // Merge the configurations from nextConfig
   webpack: (config) => {
+    // Existing webpack configuration for handling PDF files
+
     config.module.rules.push({
       test: /\.(pdf)$/,
       use: [

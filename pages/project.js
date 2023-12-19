@@ -1,20 +1,33 @@
 import React, { useState, useEffect } from "react";
 import { Octokit } from "octokit";
 import { useRouter } from "next/router";
-require("dotenv").config();
+import { config } from "dotenv";
+config();
+
 
 export default function AllProjects() {
   const [userData, setUserData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const router = useRouter();
 
+  console.log(process.env.NEXT_PUBLIC_AUTH_TOKEN);
+
   const octokit = new Octokit({
-    auth: process.env.TOKEN
+    auth: process.env.TOKEN,
   });
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        // Check if data is already in local storage
+        const cachedData = localStorage.getItem("githubUserData");
+        if (cachedData) {
+          setUserData(JSON.parse(cachedData));
+          setLoading(false);
+          return;
+        }
+
         const username = "AlexanderBarlow";
         const response = await octokit.request("GET /users/:username/repos", {
           username,
@@ -33,36 +46,58 @@ export default function AllProjects() {
 
               if (languagesUrl) {
                 try {
-                  const languagesResponse = await fetch(languagesUrl, {
-                    method: "GET",
-                  });
+                  // Check if language data is already in local storage
+                  const cachedLanguagesData = localStorage.getItem(
+                    `githubLanguagesData_${project.id}`
+                  );
 
-                  if (languagesResponse.status === 200) {
-                    const languagesData = await languagesResponse.json();
-                    return { ...project, languagesData };
+                  let languagesData;
+
+                  if (cachedLanguagesData) {
+                    languagesData = JSON.parse(cachedLanguagesData);
                   } else {
-                    console.error(
-                      `Failed to fetch languages for ${project.name}`
-                    );
-                    return null; // Return null for projects without languagesData
+                    const languagesResponse = await fetch(languagesUrl, {
+                      method: "GET",
+                    });
+
+                    if (languagesResponse.status === 200) {
+                      languagesData = await languagesResponse.json();
+                      // Cache language data in local storage
+                      localStorage.setItem(
+                        `githubLanguagesData_${project.id}`,
+                        JSON.stringify(languagesData)
+                      );
+                    } else {
+                      console.error(
+                        `Failed to fetch languages for ${project.name}`
+                      );
+                      return null;
+                    }
                   }
+
+                  return { ...project, languagesData };
                 } catch (error) {
                   console.error(
                     `Error fetching languages for ${project.name}`,
                     error
                   );
-                  return null; // Return null for projects without languagesData
+                  return null;
                 }
               }
 
-              return null; // Return null for projects without languagesData
+              return null;
             })
           );
 
-          // Filter out projects without languagesData or with an empty object
           const filteredProjects = projectsWithData.filter(
             (project) =>
               project !== null && Object.keys(project.languagesData).length > 0
+          );
+
+          // Cache data in local storage
+          localStorage.setItem(
+            "githubUserData",
+            JSON.stringify(filteredProjects)
           );
 
           setUserData(filteredProjects);
@@ -71,6 +106,8 @@ export default function AllProjects() {
             `Failed to fetch GitHub repositories: ${response.statusText}`
           );
         }
+
+        setLoading(false);
       } catch (error) {
         console.error("Error fetching data from GitHub:", error);
       }
@@ -83,6 +120,20 @@ export default function AllProjects() {
   const handleBackToHome = () => {
     router.push("/");
   };
+
+  if (loading) {
+    return (
+      <>
+        <div>Loading...</div>
+        <button
+          className="fixed bottom-4 right-4 bg-purple-700 text-white py-3 px-6 rounded-full"
+          onClick={handleBackToHome}
+        >
+          Back to Home
+        </button>
+      </>
+    );
+  }
 
   return (
     <div className="flex flex-col items-center">
